@@ -24,5 +24,48 @@
 	<div class="logo" id="a" onclick="a();" title="点击有惊喜!">
 		<img src="files/index/images/20171216094159_QaLXP.jpeg" />
 	</div>
+	<br /><br />
+	<div class="container">
+		<p id="roloadText">欢迎访问|19计算机1班|的网站</p>
+		<p id="roloadText">每天都是一个起点，每天都有一个进步，每天都有一个收获！</p>
+	</div>
+	
+	<div class="box bg-1">
+		<button class="button button--antiman button--round-1 button--text--medium">
+			<span>访问主页</span>
+		</button>
+	</div>
+	<audio autoplay loop id="music">
+		<source src="files/index/music/music.mp3" type="audio/video/mpeg" />
+	</audio>
+	<script>
+		function a(){
+			var audio = document.getElementById('music');
+			if(audio.paused){
+				audio.play();
+			}
+			else{
+				audio.pause();
+			}
+		}
+	</script>
+	<script>
+		if ('addEventListener' in window) {
+			window.addEventListener('load', function() { document.body.className = document.body.className.replace(/\bis-loading\b/, ''); });
+			document.body.className += (navigator.userAgent.match(/(MSIE|rv:11\.0)/) ? ' is-ie' : '');
+		}
+	</script>
+	<script src="files/index/js/su.js"></script>
+		<script type="text/javascript">jQuery(document).ready(function($){
+			$('body').wpSuperSnow({
+				flakes: ['files/index/image/007.png','files/index/image/006.png','files/index/image/004.png','files/index/image/002.png','files/index/image/001.png','files/index/image/003.png','files/index/image/002.png','files/index/image/001.png'],
+				totalFlakes: '290',
+				zIndex: '999999',
+				maxSize: '30',
+				maxDuration: '20',
+				useFlakeTrans: false
+			});
+		});
+	</script>
 </body>
 </html>
