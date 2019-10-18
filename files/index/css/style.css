@@ -61,15 +61,6 @@ body{
 .body_buttom_a{
 	float: left;
 }
-a{
-	margin-left:60px ;
-	text-decoration: none;
-	padding: 20px 30px;
-	background: rgba(255,255,255,0.1);
-	border-radius: 25px;
-	transition:1s all;
-	color: hotpink;
-}
 a:hover{
 	color: black;
 	background: rgba(255,255,255,0.6);
